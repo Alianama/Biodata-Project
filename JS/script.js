@@ -14,15 +14,17 @@ function calculate() {
 }
 
 //hideshow
-const calculator = document.getElementById("calculator");
-var display = 0;
-
 function hideshow() {
-  if (display == 1) {
-    calculator.style.display = "block";
-    display = 0;
+  var calculator = document.getElementById("calculator");
+  if (calculator.style.display === "none" || calculator.style.display === "") {
+    calculator.style.display = "table"; // Menampilkan tabel
+    setTimeout(function () {
+      calculator.style.opacity = 1; // Setelah muncul, atur opacity ke 1
+    }, 300);
   } else {
-    calculator.style.display = "none";
-    display = 1;
+    calculator.style.opacity = 0; // Mengurangi opacity menjadi 0
+    setTimeout(function () {
+      calculator.style.display = "none"; // Setelah opacity berkurang, sembunyikan tabel
+    }, 300);
   }
 }

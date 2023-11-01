@@ -33,9 +33,24 @@
       </div>
       <h1>ALI PURNAMA ALAM</h1>
     </header>
-    <main></main>
-    <button onclick="hideshow()" id="show-kalkulator">Kalkulator</button>
-    <table id="calculator" class="calculator">
+    <main>
+      <button
+        class="btn btn-sm btn-success custom-btn"
+        style="background-color: #2c306f"
+        id="show-biodata"
+      >
+        Biodata
+      </button>
+      <button
+        class="btn btn-sm btn-success custom-btn"
+        onclick="hideshow()"
+        style="background-color: #2c306f"
+        id="show-kalkulator"
+      >
+        Kalkulator
+      </button>
+    </main>
+    <table id="calculator" class="calculator" style="display: none">
       <tr>
         <td colspan="3">
           <input class="display-box" type="text" id="result" />
