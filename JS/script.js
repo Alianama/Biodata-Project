@@ -16,15 +16,30 @@ function calculate() {
 //hideshow
 function hideshow() {
   var calculator = document.getElementById("calculator");
-  if (calculator.style.display === "none" || calculator.style.display === "") {
+  var biodata = document.getElementById("biodata");
+  if (
+    calculator.style.display === "none" ||
+    calculator.style.display === "" ||
+    biodata.style.display === "block"
+  ) {
+    biodata.style.display = "none";
     calculator.style.display = "table"; // Menampilkan tabel
-    setTimeout(function () {
-      calculator.style.opacity = 1; // Setelah muncul, atur opacity ke 1
-    }, 300);
   } else {
-    calculator.style.opacity = 0; // Mengurangi opacity menjadi 0
-    setTimeout(function () {
-      calculator.style.display = "none"; // Setelah opacity berkurang, sembunyikan tabel
-    }, 300);
+    calculator.style.display = "none"; // Setelah opacity berkurang, sembunyikan tabel
+  }
+}
+
+function showbiodata() {
+  var calculator = document.getElementById("calculator");
+  var biodata = document.getElementById("biodata");
+  if (
+    biodata.style.display === "none" ||
+    biodata.style.display === "" ||
+    calculator.style.display === "table"
+  ) {
+    biodata.style.display = "block";
+    calculator.style.display = "none";
+  } else {
+    biodata.style.display = "none";
   }
 }
