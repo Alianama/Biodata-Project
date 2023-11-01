@@ -1,6 +1,6 @@
-# Ali Purnama Alam - Portofolio dan Kalkulator Web
+# Ali Purnama Alam - Biodata dan Kalkulator Web
 
-Selamat datang di portofolio pribadi Ali Purnama Alam! Di sini, Anda dapat melihat informasi tentang diri saya serta mencoba kalkulator sederhana yang telah saya buat. 🚀
+Selamat datang di project Pribadi + tugas Kuliah. Di sini Anda dapat melihat informasi tentang diri saya serta mencoba kalkulator sederhana yang telah saya buat. 🚀
 
 ## Tentang Saya
 
